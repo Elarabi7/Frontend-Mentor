@@ -1,0 +1,156 @@
+/* For devices with a max width of 600px (typically mobile) */
+@media screen and (max-width: 600px) {
+    #Main {
+        margin: 5%;
+        padding: 10px;
+    }
+
+    #Omelette {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    ol li:before {
+        left: -15px;
+    }
+}
+
+/* For tablets (screens between 600px and 1024px wide) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #Main {
+        margin: 5%;
+    }
+
+    #Omelette {
+        width: 80%;
+    }
+
+    table {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #Main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+}
+
+img {
+
+    border-radius: 20px;
+    align-self: center;
+}
+
+#Main {
+    display: flex;
+    flex-direction: column;
+    margin: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2.5%;
+    align-content: center;
+    text-align: left;
+    align-self: center;
+    font-family: 'Outfit', 'Young Serif';
+    font-weight: 400;
+    background-color: white;
+    border-radius: 20px;
+    color: rgb(59, 59, 59);
+}
+
+#Omelette {
+    width: 100%;
+    max-width: 720px;
+    align-content: center;
+}
+
+table {
+    padding-left: 0%;
+    margin: 1%;
+    width: 100%;
+}
+
+#PTime {
+    background-color: rgb(255, 238, 238);
+    border-radius: 10px;
+    padding: 1%;
+    padding-left: 5%;
+    margin: 1%;
+    text-align: left;
+
+}
+
+#PTime h3 {
+    color: purple;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%)
+}
+
+table td {
+
+    padding-left: 300px;
+    color: hsl(14, 45%, 36%);
+}
+
+table td,
+th {
+    border-bottom: 1px solid black;
+    padding: 10px;
+
+}
+
+/* Tell the <li> to not display numbers, but keep track of what the numbers should be */
+ol li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+}
+
+/* Outout the numbers using the counter() function, but use a custom color, and position the numbers how we want */
+ol li:before {
+    color: hsl(14, 45%, 36%);
+    content: counter(list) ".";
+    left: -32px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+    font-weight: bold;
+}
+
+
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+#PTime ul li::marker {
+    color: purple;
+}
+
+table th {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2rem;
+    /* Adjusts based on screen size */
+}
+
+p {
+    font-size: 1rem;
+}
