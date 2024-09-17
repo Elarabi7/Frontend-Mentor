@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    font-family: "Inter", sans-serif;
+}
+
+#Main {
+
+    background-color: hsl(0, 0%, 12%);
+    padding: 2.5%;
+    margin: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 3%;
+    font-size: 1rem;
+}
+
+img {
+    align-self: center;
+    border-radius: 50%;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+h2 {
+    color: hsl(75, 94%, 57%);
+}
+
+p {
+    color: whitesmoke;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+}
+
+.button {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+.button:hover {
+    background-color: rgb(97, 97, 97);
+    cursor: pointer;
+
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+    #Main {
+        margin: 10%;
+        padding: 5%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        padding: 4%;
+        margin: 2.5%;
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #Main {
+        margin: 7%;
+    }
+
+    .buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .button {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
